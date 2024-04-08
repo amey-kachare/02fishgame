@@ -7,13 +7,13 @@ function App() {
 
     // Add function 
     const addNo = () => {
-        console.log(counter);
         setCounter((counter) => counter + 1); //Used call back feature in useState instead of manually incrementing
     };
 
     //Remove Function
     const removeNo = () => {
-        setCounter((counter) => counter - 1);
+        if(counter>0)
+            setCounter((counter) => counter - 1);
     };
 
     useEffect(() => {
