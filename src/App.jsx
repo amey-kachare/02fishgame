@@ -31,8 +31,9 @@ const [element,setElement]=useState([])
     for (let i = 0; i < counter; i++) {
       // Define the style object for each element
       const style = {
-        color: i % 2 === 0 ? 'rgb(238, 76, 51)' :  'rgb(49, 179, 255)', // Alternate colors for even and odd indices
+        color: i % 2 === 0 ? '#db5b3b' :  'white', // Alternate colors for even and odd indices
         fontSize: `${25 - counter*3}px`, // Increase font size for each element
+        textShadow: '2px 2px 5px aqua',
         // text-shadow: '20 px',
         // textDecoration:'solid'
       };
